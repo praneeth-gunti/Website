@@ -19,6 +19,24 @@ body{
   width: 66.66666667%
 }
 
+@media (min-width:770px) and (max-width:992px) {
+  .container {
+    max-width: 750px
+  }
+
+  .col-md-push-7 {
+    left: 58.33333333%
+  }
+
+  .col-md-pull-3 {
+    right: 25%
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333337%
+  }
+}
+
 @media (min-width:992px) {
   .container {
     max-width: 970px
@@ -339,7 +357,7 @@ hr{
 /* ===================================================  SKILLS  ================================================================================================ */
 
 #skills {
-  z-index: 980;
+  /* z-index: 980; */
   position: relative;
   background: #fff;
   padding: 0
@@ -356,7 +374,7 @@ hr{
   text-align: center
 }
 
-@media (min-width:992px) {
+@media (min-width:770px) {
   #skills #design {
     text-align: left;
     margin: 3em 0 6em
@@ -368,7 +386,7 @@ hr{
   text-align: center
 }
 
-@media (min-width:992px) {
+@media (min-width:770px) {
   #skills #programming {
     text-align: left;
     margin: 3em 0
@@ -524,7 +542,7 @@ hr{
 
 @media (min-width:992px) {
   #hobbies {
-    padding: 3em 0
+    padding: 11em 0 3em
   }
 }
 
@@ -533,7 +551,7 @@ hr{
   text-align: center
 }
 
-@media (min-width:992px) {
+@media (min-width:770px) {
   #hobbies #hobbies-1, #hobbies #hobbies-3 {
     text-align: left;
     margin: 3em 0 6em
@@ -545,7 +563,7 @@ hr{
   text-align: center
 }
 
-@media (min-width:992px) {
+@media (min-width:770px) {
   #hobbies #hobbies-2, #hobbies #hobbies-4 {
     text-align: left;
     margin: 3em 0 6em
@@ -593,7 +611,7 @@ hr{
   padding: 2em 0
 }
 
-@media (min-width:992px) {
+@media (min-width:770px) {
   #hobbies .dtl {
     padding: 0 0 0 2em
   }
