@@ -99,6 +99,9 @@ img{
   #navigation a:hover{
     color: #000;
   }
+  /* .topContainer{
+    padding-top: 180px;
+  } */
 }
 
 
@@ -135,7 +138,6 @@ a:hover{
 /* ============================================================== Image Section ========================================================================= */
 
 #top {
-  padding-top: 180px;
   overflow: hidden;
   background: #eaf6f6;
 }
@@ -161,6 +163,18 @@ header {
   -moz-transition: fadeIn .5s ease-in-out;
   -o-transition: fadeIn .5s ease-in-out;
   transition: fadeIn .5s ease-in-out
+}
+
+@media (min-width:990px){
+  .topContainer #title{
+    padding-top: 180px;
+  }
+}
+
+@media (max-width:990px) {
+  .topContainer #title{
+    padding-top: 100px;
+  }
 }
 
 /* ====================== My Name    ========================================================= */
