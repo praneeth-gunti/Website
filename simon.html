@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Icon and font styles -->
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Original+Surfer&effect=emboss' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- <audio id="green_s">
+    <source src="sounds/green.mp3">
+    </source>
+  </audio>
+  <audio id="red_s">
+    <source src="sounds/red.mp3">
+    </source>
+  </audio>
+  <audio id="yellow_s">
+    <source src="sounds/yellow.mp3">
+    </source>
+  </audio>
+  <audio id="blue_s">
+    <source src="sounds/blue.mp3">
+    </source>
+  </audio> -->
+
+  <!-- Nav Bar Java script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="top">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navigation">
+      <a class="navbar-brand" href="index.html">Jaan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <!-- <i class="fa fa-list" aria-hidden="true"></i> -->
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hobbies.html">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Play Games</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="projects\Simon\index.html">Simon</a>
+              <a class="dropdown-item" href="projects\Drum Kit\index.html">Drum Kit</a>
+              <a class="dropdown-item" href="projects\Dicee Challenge\dicee.html">Dice game</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="details.html">Message</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+  <section id="simon">
+    <section id="about-simon">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <article>
+              <figure>
+                <img src="images/cartoon/about.svg">
+              </figure>
+              <h3>Play Simon</h3>
+              <p>Play this free simon game and have fun testing your memory. Follow the pattern of lights and sounds and repeat the same combination to move on to the next round.</p>
+              <p>It starts off easy but it won’t be long before you’re questioning your memory and struggling to remember the pattern. Rack up high scores, improve your memory and enjoy this classic game</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div id="outer-circle">
+        <div class="btn_color green" id="green"></div>
+        <div class="btn_color red" id="red"></div>
+        <div class="btn_color yellow" id="yellow"></div>
+        <div class="btn_color blue" id="blue"></div>
+        <div id="inner-circle">
+          <div id="title_simon" class="font-effect-emboss">SIMON!</div>
+          <div id="switches">
+            <!-- <input type="checkbox" class="toggle" id="on"> -->
+            <button class="button_start" id="start">Start</button>
+            <!-- <input type="checkbox" class="toggle" id="strict"> -->
+          </div>
+
+          <div id="turn"></div>
+          <div class="text">
+            COUNT
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="https://app.codesignal.com/profile/praneeth_g4/">CodeSignal</a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://twitter.com/PRANEET68049203/">Twitter</a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://github.com/praneeth-gunti/">GitHub</a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.facebook.com/praneeth.gunti/">Facebook</a>
+        </div>
+        <!-- <li><a href="https://www.hackerrank.com/praneeth_gunti/">HackerRank</a></li> -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2020 All rights reserved. Praneeth Gunti.</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Navbar scroll up and down -->
+  <script>
+    if (window.innerWidth <= 990) {
+      var element = document.getElementById("navigation");
+      element.classList.remove("fixed-top");
+    } else {
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos - 1) {
+          document.getElementById("navigation").style.top = "0";
+        } else {
+          document.getElementById("navigation").style.top = "-20%";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
